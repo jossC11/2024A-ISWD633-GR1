@@ -7,15 +7,15 @@ Para crear un nuevo contenedor Docker a partir de una imagen específica, pero s
 docker create --name <nombre contenedor> <nombre imagen>:<tag>
 ```
 Crear el contenedor  **srv-web** usando la imagen nginx version alpine
-
+```
 docker create --name srv-web nginx:alpine
-
+```
 Si creas un contenedor en Docker sin asignarle un nombre específico utilizando la opción --name, Docker asignará automáticamente un nombre aleatorio al contenedor. Este nombre suele consistir en una combinación de palabras y números.  
 
 Crear el contenedor usando la imagen hello-world
-
+```
 docker create --name MiContPrueba  hello-world
-
+```
 ### Listar los contenedores ejecutándose o no
 
 ```
@@ -28,8 +28,9 @@ docker ps -a
 docker start <nombre contenedor o identificador>
 ```
 Iniciar el contenedor srv-web 
+```
 docker start srv-web
-
+```
 ### Listar los contenedores ejecutándose
 ```
 docker ps 
@@ -50,13 +51,16 @@ docker run --name <nombre contenedor> <nombre imagen>:<tag>
 ![Ecosistema de Docker](imagenes/dockerRun.PNG)
 
 Crear y ejecutar inmediatamente el contenedor **srv-web2** usando la imagen nginx:alpine
-
+```
 docker run --name srv-web2 nginx:alpine
-
+```
 
 **¿Qué sucede luego de la ejecución del comando?**
-Después de ejecutar el comando, se inicia un contenedor Docker usando la imagen Nginx. Se ejecutan scripts de configuración, se inicia Nginx y se muestran detalles sobre su configuración y el sistema operativo. Finalmente, se inician varios procesos de trabajo para manejar solicitudes.
-
+```
+Después de ejecutar el comando, se inicia un contenedor Docker usando la imagen Nginx. 
+Se ejecutan scripts de configuración, se inicia Nginx y se muestran detalles sobre su configuración y el sistema operativo.
+Finalmente, se inician varios procesos de trabajo para manejar solicitudes.
+```
 Cuando ejecutas un contenedor en primer plano sin la opción -d (modo detach), el contenedor captura la entrada estándar (stdin) del terminal, lo que significa que el terminal queda "atrapado" y no puedes introducir más comandos hasta que detengas el contenedor.
 
 ### Para crear un contenedor y ejecutarlo inmediatamente sin estar vinculados al mismo
@@ -67,8 +71,9 @@ Cuando un contenedor se ejecuta en segundo plano, Docker devuelve el control al 
 docker run -d --name <nombre contenedor> <nombre imagen>:tag
 ```
 Crear y ejecutar inmediatamente el contenedor **srv-web3** en modo detach usando la imagen nginx:alpine
+```
 docker run -d --name srv-web3 nginx:alpine
-
+```
 
 ### Para eliminar un contenedor
 
@@ -76,10 +81,13 @@ docker run -d --name srv-web3 nginx:alpine
 docker rm <nombre contenedor>
 ```
 Eliminar el contenedor que se creó a partir de la imagen hello-world 
+```
 docker rm MiContPrueba
-
+```
 Verificar que el contenedor que se eliminó
+```
 docker ps -a
+```
 podemos observar que ya no se encuentra el contenedor MiContPrueba
 ![image](https://github.com/jossC11/2024A-ISWD633-GR1/assets/94476123/e161f8d0-0bbe-41f2-b666-802d044698ba)
 
@@ -90,13 +98,17 @@ podemos observar que ya no se encuentra el contenedor MiContPrueba
 docker rm -f <nombre contenedor>
 ```
 Eliminar el contenedor **srv-web3** 
+```
 docker rm -f srv-web3
-
+```
 Verificar que el contenedor que se eliminó
+```
 docker ps -a
-
+```
 ### Para inspecionar un contenedor 
 
 Inspeccionar el contenedor **srv-web** 
+```
 docker inspect srv-web
+```
 ![image](https://github.com/jossC11/2024A-ISWD633-GR1/assets/94476123/07f6b1b5-7eb6-4149-9e61-190d0c21a10b)
