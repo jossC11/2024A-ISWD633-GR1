@@ -25,19 +25,22 @@ docker pull <nombre imagen>:<tag>
 ```
 
 Descargar la imagen **hello-world**
+```
 docker pull hello-world
-
+```
 **¿Qué es nginx**
+```
 Nginx es un servidor web ligero de código abierto que también puede funcionar como proxy inverso, balanceador de carga y servidor de correo electrónico.
-
+```
 Descargar la imagen  **nginx** en la versión **alpine**
+```
 docker pull nginx:alpine
-
+```
 ### Listar imágenes
-
+```
 ![image](https://github.com/jossC11/2024A-ISWD633-GR1/assets/94476123/d02f9be0-6c0b-4d4f-be87-21627de47716)
 
-
+```
 **Identificadores**
 En Docker, se utilizan varios identificadores para diferenciar de manera única los elementos del sistema, como imágenes, contenedores, volúmenes y redes. Estos identificadores son generados automáticamente por Docker y son únicos dentro del contexto del sistema Docker en el que se encuentran. 
 
@@ -50,11 +53,13 @@ docker inspect <nombre imagen>:<tag>
 ```
 
 Inspeccionar la imagen hello-world 
+```
 docker inspect hello-world
-
+```
 **¿Con qué algoritmo se está generando el ID de la imagen**
+```
 el  ID se esta generando con sha256
-
+```
 ### Filtrar imágenes
 
 ```
@@ -70,10 +75,9 @@ docker rmi <nombre imagen>:<tag>
 ```
 
 Eliminar la imagen hello-world :
-
+```
 docker rmi hello-world:latest
-
-
+```
 -f: Es la opción para forzar la eliminación de la imagen incluso si hay contenedores en ejecución que utilizan esa imagen.
 Cuando eliminas una imagen Docker, Docker no elimina automáticamente los contenedores que se han creado a partir de esa imagen. Esto significa que, aunque hayas eliminado la imagen, el contenedor seguirá ejecutándose normalmente.  
 **Considerar**
