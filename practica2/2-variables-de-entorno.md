@@ -52,6 +52,16 @@ Es necesario especificar la ruta absoluta del archivo si este se encuentra en un
 docker run -P -d --name mysqlDocker2 --env-file=C:\Users\Personal\Downloads\contrasena.txt mysql:8
 ```
 # CAPTURA CON LA COMPROBACIÓN DE LA CREACIÓN DE LAS VARIABLES DE ENTORNO DEL CONTENEDOR ANTERIOR 
+![image](https://github.com/jossC11/2024A-ISWD633-GR1/assets/94476123/dd99b04f-3e48-4562-ada2-6836861691e4)
+# ¿Qué bases de datos existen en el contenedor creado?
+
+mediante docker exec -it mysqlDocker2 mysql -u root -p   
+
+![image](https://github.com/jossC11/2024A-ISWD633-GR1/assets/94476123/5c3c2ffc-0460-4a35-9a47-a5ebe2c1e29d)
+
+y posteriormente show databases;  , podemos visualizar las DB existentes 
+
+![image](https://github.com/jossC11/2024A-ISWD633-GR1/assets/94476123/09c9c44b-2bba-4628-9b62-b10a3967c4a5)
 
 
 
