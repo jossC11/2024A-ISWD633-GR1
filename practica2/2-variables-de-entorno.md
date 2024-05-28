@@ -53,7 +53,7 @@ docker run -P -d --name mysqlDocker2 --env-file=C:\Users\Personal\Downloads\cont
 ```
 # CAPTURA CON LA COMPROBACIÓN DE LA CREACIÓN DE LAS VARIABLES DE ENTORNO DEL CONTENEDOR ANTERIOR 
 ![image](https://github.com/jossC11/2024A-ISWD633-GR1/assets/94476123/dd99b04f-3e48-4562-ada2-6836861691e4)
-# ¿Qué bases de datos existen en el contenedor creado?
+### ¿Qué bases de datos existen en el contenedor creado?
 
 mediante docker exec -it mysqlDocker2 mysql -u root -p   
 
@@ -64,7 +64,3 @@ y posteriormente show databases;  , podemos visualizar las DB existentes
 ![image](https://github.com/jossC11/2024A-ISWD633-GR1/assets/94476123/09c9c44b-2bba-4628-9b62-b10a3967c4a5)
 
 
-
-### ¿Qué bases de datos existen en el contenedor creado?
-# COMPLETAR
-![Uploading image.png…]()
