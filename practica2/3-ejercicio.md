@@ -4,12 +4,14 @@ docker run -d --name postgresContainer postgres:11.21-alpine3.17
 
 ### Crear un cliente de postgres. Usar la imagen: dpage/pgadmin4
 
-docker run -d --name pgadmin4 -p 80:80 -e PGADMIN_DEFAULT_EMAIL=joselyn.plco@epn.edu.ec -e PGADMIN_DEFAULT_PASSWORD=administrador dpage/pgadmin4
+docker run -d --name pgadmin4 -p 80:80 -e PGADMIN_DEFAULT_EMAIL=joselyn.pilco@epn.edu.ec -e PGADMIN_DEFAULT_PASSWORD=administrador dpage/pgadmin4
 
 La figura presenta el esquema creado en donde los puertos son:
+```
 - a: 8080
 - b: 80
 - c: 5032
+```
 
 ![Imagen](imagenes/esquema-ejercicio3.PNG)
 
@@ -24,7 +26,6 @@ La figura presenta el esquema creado en donde los puertos son:
 Para la creación de tablas  
 ![image](https://github.com/jossC11/2024A-ISWD633-GR1/assets/94476123/4026ba18-ae63-4472-a63b-6c1d5d211f20)
 
-![image](https://github.com/jossC11/2024A-ISWD633-GR1/assets/94476123/91e0e7d3-22dd-4807-bc56-f7adf150af70)
 
 ## Desde el servidor postgresl
 ### Acceder al servidor
@@ -33,3 +34,5 @@ Para la creación de tablas
 # COMPLETAR
 ### Realizar un select *from personas
 # AGREGAR UNA CAPTURA DE PANTALLA DEL RESULTADO
+![image](https://github.com/jossC11/2024A-ISWD633-GR1/assets/94476123/91e0e7d3-22dd-4807-bc56-f7adf150af70)
+
