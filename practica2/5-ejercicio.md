@@ -16,8 +16,6 @@ docker run -d --name wordpress -p 8080:80 --network net-wp wordpress
 De acuerdo con el trabajo realizado, en la el esquema de ejercicio el puerto a es **8080**
 
 Ingresar desde el navegador al wordpress y finalizar la configuración de instalación.
-![image](https://github.com/jossC11/2024A-ISWD633-GR1/assets/94476123/8eb09c73-59af-49e3-9c76-ca08e9a06259)
-
 
 ![image](https://github.com/jossC11/2024A-ISWD633-GR1/assets/94476123/8509792b-4e3b-41c8-a7eb-d1ba8322909c)
 
@@ -25,7 +23,8 @@ Ingresar desde el navegador al wordpress y finalizar la configuración de instal
 
 # COLOCAR UNA CAPTURA DE LA CONFIGURACIÓN
 ![image](https://github.com/jossC11/2024A-ISWD633-GR1/assets/94476123/03b51fe3-052d-47d1-97d2-80c44c1179e0)
-![image](https://github.com/jossC11/2024A-ISWD633-GR1/assets/94476123/a304e196-6c9c-4f0e-86b6-c8173b2740c2)
+![image](https://github.com/jossC11/2024A-ISWD633-GR1/assets/94476123/2262f55e-f25b-4a80-8ba8-1203c79edc90)
+
 
 Desde el panel de admin: cambiar el tema y crear una nueva publicación.
 ![image](https://github.com/jossC11/2024A-ISWD633-GR1/assets/94476123/07af2715-4455-4015-87f4-22f8f7fd867c)
