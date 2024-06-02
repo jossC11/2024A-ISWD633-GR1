@@ -50,6 +50,35 @@ docker network ls
 
 # COLOCAR UNA CAPTURA DE LAS REDES EXISTENTES CREADAS
 
-# COLOCAR UNA(S) CAPTURAS(S) DE LOS CONTENEDORES CREADOS EN DONDE SE EVIDENCIE A QUÉ RED ESTÁN VINCULADOS
+creación de redes :
+```
+docker network create net-curso01
+docker network create net-curso02
+```
+Enlazamos a  los contenedores 
+```
+docker run -d --name contenedor1 --network net-curso01 nginx:alpine
+docker run -d --name contenedor2 --network net-curso01 nginx:alpine
+ddocker run -d --name contenedor3 --network net-curso02 --network net-curso01 nginx:alpine
+docker run -d --name contenedor4 --network net-curso02 nginx:alpine
+```
+redes existentes creadas: 
 
-# Eliminar las redes cre
+![image](https://github.com/jossC11/2024A-ISWD633-GR1/assets/94476123/1b62683f-0d64-4519-8b67-83e10966e18b)
+
+
+# COLOCAR UNA(S) CAPTURAS(S) DE LOS CONTENEDORES CREADOS EN DONDE SE EVIDENCIE A QUÉ RED ESTÁN VINCULADOS
+```
+docker inspect net-curso01
+```
+![image](https://github.com/jossC11/2024A-ISWD633-GR1/assets/94476123/9a8fd5e0-0b02-430e-bd57-b39533b48097)
+
+```
+docker inspect net-curso02
+```
+![image](https://github.com/jossC11/2024A-ISWD633-GR1/assets/94476123/1ea544ae-5102-4fc5-adcc-9288421098f1)
+
+# Eliminar las redes creadas
+
+antes de  eliminar las redes se deben desconectar de los contenedores una vez realizado esto se porcede a eliminarlas :
+![image](https://github.com/jossC11/2024A-ISWD633-GR1/assets/94476123/34b32dbd-f173-418d-9d42-0100fa72f86e)
