@@ -12,10 +12,12 @@ docker run -P -d --name mysql --env-file="C:\Users\Personal\Downloads\contrasena
 ### Crear el contenedor wordpress a partir de la imagen: wordpress, configurar las variables de entorno necesarias
 # COMPLETAR
 docker run -d --name wordpress -p 8080:80 --network net-wp wordpress
+
 De acuerdo con el trabajo realizado, en la el esquema de ejercicio el puerto a es **8080**
 
 Ingresar desde el navegador al wordpress y finalizar la configuración de instalación.
-![image](https://github.com/jossC11/2024A-ISWD633-GR1/assets/94476123/1e4af499-a044-47d8-b3af-c9da06cae19f)
+![image](https://github.com/jossC11/2024A-ISWD633-GR1/assets/94476123/8eb09c73-59af-49e3-9c76-ca08e9a06259)
+
 
 ![image](https://github.com/jossC11/2024A-ISWD633-GR1/assets/94476123/8509792b-4e3b-41c8-a7eb-d1ba8322909c)
 
