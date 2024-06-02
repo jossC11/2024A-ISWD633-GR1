@@ -19,10 +19,10 @@ docker run -P -d --name mysql --env-file="C:\Users\Personal\Downloads\contrasena
 # COMPLETAR
 
 ```
-docker run -d --name wordpress -p 8080:80 --network net-wp wordpress
+docker run -d --name wordpress -p 9300:80 --network net-wp wordpress
 
 ```
-De acuerdo con el trabajo realizado, en la el esquema de ejercicio el puerto a es **8080**
+De acuerdo con el trabajo realizado, en la el esquema de ejercicio el puerto a es **9300**
 
 Ingresar desde el navegador al wordpress y finalizar la configuración de instalación.
 
