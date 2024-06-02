@@ -4,15 +4,24 @@
 ### Crear la red
 # COMPLETAR
 
+```
 docker network create net-wp
 
+```
 ### Crear el contenedor mysql a partir de la imagen mysql:8, configurar las variables de entorno necesarias
 # COMPLETAR
+
+```
 docker run -P -d --name mysql --env-file="C:\Users\Personal\Downloads\contrasena.txt" --network net-wp mysql:8
+
+```
 ### Crear el contenedor wordpress a partir de la imagen: wordpress, configurar las variables de entorno necesarias
 # COMPLETAR
+
+```
 docker run -d --name wordpress -p 8080:80 --network net-wp wordpress
 
+```
 De acuerdo con el trabajo realizado, en la el esquema de ejercicio el puerto a es **8080**
 
 Ingresar desde el navegador al wordpress y finalizar la configuración de instalación.
@@ -41,7 +50,11 @@ recordar que a es el puerto que usó para el mapeo con wordpress
 
 
 ### Eliminar el contenedor wordpress
+
+```
 docker rm wordpress
+
+```
 ![image](https://github.com/jossC11/2024A-ISWD633-GR1/assets/94476123/67463e10-a0a3-48dc-9ded-d8dc2642523d)
 
 
@@ -49,8 +62,10 @@ docker rm wordpress
 Ingresar a: http://localhost:9300/ 
 recordar que a es el puerto que usó para el mapeo con wordpress
 
+```
 docker run -d --name wordpress -p 9300:80 wordpress
 
+```
 ### ¿Qué ha sucedido, qué puede observar?
 nos redirige al inicio donde tenemos que configurar nuevamente wordpress
 ![image](https://github.com/jossC11/2024A-ISWD633-GR1/assets/94476123/b8910c49-c04e-4052-aaeb-077a1e4a06ca)
