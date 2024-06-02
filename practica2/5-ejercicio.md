@@ -28,6 +28,10 @@ Ingresar desde el navegador al wordpress y finalizar la configuración de instal
 Desde el panel de admin: cambiar el tema y crear una nueva publicación.
 ![image](https://github.com/jossC11/2024A-ISWD633-GR1/assets/94476123/07af2715-4455-4015-87f4-22f8f7fd867c)
 
+creación de  la nueva Publicación 
+
+![image](https://github.com/jossC11/2024A-ISWD633-GR1/assets/94476123/36ce6180-0826-4bad-8fcc-1b6a0d09061f)
+
 
 Ingresar a: http://localhost:9300/ 
 recordar que a es el puerto que usó para el mapeo con wordpress
