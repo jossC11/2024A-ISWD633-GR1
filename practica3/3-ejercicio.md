@@ -35,7 +35,10 @@ Ruta carpeta host: .../ejercicio3/www
 ### Crear un contenedor con la imagen wordpress en la red net-wp, configurar las variables de entorno WORDPRESS_DB_HOST, WORDPRESS_DB_USER, WORDPRESS_DB_PASSWORD y WORDPRESS_DB_NAME (los valores de estas variables corresponden a los del contenedor creado previamente)
 docker run -d --name wordpressJP --network net-wp -p 9500:80 -v "C:\Users\Personal\OneDrive - Escuela Politécnica Nacional\Escritorio\Practica3\ejercicio3\www":/var/www/html -e WORDPRESS_DB_HOST=contMysql:3306 -e WORDPRESS_DB_USER=root -e WORDPRESS_DB_PASSWORD=Bookoflove11 -e WORDPRESS_DB_NAME=wordpress wordpress
 ### Personalizar la apariencia de wordpress y agregar una entrada
-![image](https://github.com/jossC11/2024A-ISWD633-GR1/assets/94476123/3289f68d-f913-4cbc-8191-ebcb42056cce)
+![image](https://github.com/jossC11/2024A-ISWD633-GR1/assets/94476123/a720616c-ff7d-4779-afcb-93a1bda91fbe)
+
+![image](https://github.com/jossC11/2024A-ISWD633-GR1/assets/94476123/fd145bf8-6619-40ec-856e-39909f6e6051)
+
 
 ### Eliminar el contenedor y crearlo nuevamente, ¿qué ha sucedido?
 Al crear nuevamente el contenedor y abrir el puerto se  observa  la entrada creada anteriormente  lo que quiere decir que las configuraciones que se hicieron se han guardado .
