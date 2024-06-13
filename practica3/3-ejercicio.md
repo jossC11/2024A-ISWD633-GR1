@@ -33,10 +33,13 @@ En el esquema del ejercicio la carpeta contenedor (b) es  /var/www/html.
 Ruta carpeta host: .../ejercicio3/www
 
 ### Crear un contenedor con la imagen wordpress en la red net-wp, configurar las variables de entorno WORDPRESS_DB_HOST, WORDPRESS_DB_USER, WORDPRESS_DB_PASSWORD y WORDPRESS_DB_NAME (los valores de estas variables corresponden a los del contenedor creado previamente)
-docker run -d --name wordpress --network net-wp -p 9500:80 -v "C:\Users\Personal\OneDrive - Escuela Politécnica Nacional\Escritorio\Practica3\ejercicio\www":/var/www/html -e WORDPRESS_DB_HOST=contMysql:3306 -e WORDPRESS_DB_USER=root -e WORDPRESS_DB_PASSWORD=Bookoflove11 -e WORDPRESS_DB_NAME=wordpress wordpress
+docker run -d --name wordpressJP --network net-wp -p 9500:80 -v "C:\Users\Personal\OneDrive - Escuela Politécnica Nacional\Escritorio\Practica3\ejercicio3\www":/var/www/html -e WORDPRESS_DB_HOST=contMysql:3306 -e WORDPRESS_DB_USER=root -e WORDPRESS_DB_PASSWORD=Bookoflove11 -e WORDPRESS_DB_NAME=wordpress wordpress
 ### Personalizar la apariencia de wordpress y agregar una entrada
 
 ### Eliminar el contenedor y crearlo nuevamente, ¿qué ha sucedido?
+![image](https://github.com/jossC11/2024A-ISWD633-GR1/assets/94476123/964e4c25-866f-4a0b-abc0-b83dece20847)
+
+personalización 
 
 # COMPLETAR CON LA RESPUESTA A LA PREGUNTA
 
