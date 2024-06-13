@@ -8,27 +8,41 @@ docker run -d --name <nombre contenedor> -v <ruta carpeta host>:<ruta carpeta co
 ### Crear un volumen tipo host con la imagen nginx:alpine, para la ruta carpeta host: directorio en donde se encuentra la carpeta html en tu computador y para la ruta carpeta contenedor: /usr/share/nginx/html esta ruta se obtiene al revisar la se obtiene desde la documentación
 ![Volúmenes](imagenes/volumen-host.PNG)
 # COMPLETAR CON EL COMANDO
-
+```
+docker run -d --name contenedorVolumen -p 8080:80 -v "C:/Users/Personal/OneDrive - Escuela Politécnica Nacional/Escritorio/Practica3:/usr/share/nginx/html" nginx:alpine
+```
 ### ¿Qué sucede al ingresar al servidor de nginx?
-# COMPLETAR CON LA RESPUESTA A LA PREGUNTA
+```
+Sale que existe  un error 403
+```
+![image](https://github.com/jossC11/2024A-ISWD633-GR1/assets/94476123/f47ac0de-b331-4f40-841e-b5d77251171a)
+
 
 ### ¿Qué pasa con el archivo index.html del contenedor?
-# COMPLETAR CON LA RESPUESTA A LA PREGUNTA
-
+```
+No existe en archvo index.html en el contenedor
+```
 ### Ir a https://html5up.net/ y descargar un template gratuito, descomprirlo dentro de nginx/html
 ### ¿Qué sucede al ingresar al servidor de nginx?
-# COMPLETAR CON LA RESPUESTA A LA PREGUNTA
+```
+ Ahora si se visualiza  la pagina que nos descargammos 
+```
+ ![image](https://github.com/jossC11/2024A-ISWD633-GR1/assets/94476123/085e10cb-ec43-4d3f-a940-c158a239ebff)
+
 
 ### Eliminar el contenedor
-# COMPLETAR CON EL COMANDO
-
+```
+docker rm -f contenedorVolumen   
+```
 ### ¿Qué sucede al crear nuevamente el mismo contenedor con volumen de tipo host a los directorios definidos anteriormente?
-# COMPLETAR CON LA RESPUESTA A LA PREGUNTA
-
+```
+la misma página segue siendo visible al recrear el contenedor debido a la persistencia de los datos en el host.
+```
 ### ¿Qué hace el comando pwd?
 # COMPLETAR CON LA RESPUESTA A LA PREGUNTA
-Si quieres incluir el comando pwd dentro de un comando de Docker, lo puedes hacer de diferentes maneras dependiendo del shell que estés utilizando.
-
+```
+El comando nos muestra la ruta del directorio actual en el que estamos trabajando .
+```
 
 ### Volumen tipo host usando PWD y PowerShell
 ```
